@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>LogoutController</servlet-name>
+        <servlet-class>br.pucpcaldas.inf.lc.deliverit.controller.LogoutController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ProdutoController</servlet-name>
+        <servlet-class>br.pucpcaldas.inf.lc.deliverit.controller.ProdutoController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PedidoController</servlet-name>
+        <servlet-class>br.pucpcaldas.inf.lc.deliverit.controller.PedidoController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FluxoCaixaController</servlet-name>
+        <servlet-class>br.pucpcaldas.inf.lc.deliverit.controller.FluxoCaixaController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutController</servlet-name>
+        <url-pattern>/autenticado/LogoutController</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CategoriaController</servlet-name>
+        <servlet-class>br.pucpcaldas.inf.lc.deliverit.controller.CategoriaController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CategoriaController</servlet-name>
+        <url-pattern>/autenticado/CategoriaController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProdutoController</servlet-name>
+        <url-pattern>/autenticado/ProdutoController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PedidoController</servlet-name>
+        <url-pattern>/autenticado/PedidoController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FluxoCaixaController</servlet-name>
+        <url-pattern>/autenticado/FluxoCaixaController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <jsp-config>
+        <jsp-property-group>
+            <description>Header and Footer Settings</description>
+            <url-pattern>/autenticado/*</url-pattern>
+            <include-prelude>/WEB-INF/incluir/header.jsp</include-prelude>
+            <include-coda>/WEB-INF/incluir/footer.jsp</include-coda>
+        </jsp-property-group>
+    </jsp-config>
+</web-app>

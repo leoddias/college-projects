@@ -1,0 +1,115 @@
+Se formos utilizar threads ta ai uma boa teoria e exemplo prático:
+http://pt.wikibooks.org/wiki/Programa%C3%A7%C3%A3o_Paralela_em_Arquiteturas_Multi-Core/Programa%C3%A7%C3%A3o_em_Pthreads
+
+Se você tiver afim de compartilhar os codigos e fazer um repositorio compartilhado e com controle de versão assite:
+Não entendeu o que eu to falando assite isso:
+https://www.youtube.com/watch?v=UMhskLXJuq4
+Tutorial instalar git no windows
+https://www.youtube.com/watch?v=neDiLHwXSVo
+
+
+
+
+
+
+
+
+
+
+Nome do Projeto: HealthCenter(); ////// CentroDeSaude();
+
+Definição: Um software para gerenciamento de filas/atendimento, com controle de senhas, e relatorios finais.Ao final da execução você terá estatisticas/relatorios sobre o que foi simulado.
+
+1. Pacientes: 
+Paciente, chega, gera o codigo paciente(1-100) gera a senha de forma random (NC1~NC100,PC1~PC100, EC1~EC100)
+P = Preferencial. 2
+E = Emergencial 1
+N = Normal 0
+
+	O paciente deverá conter os seguintes campos:
+	         int   codigo;
+   		 senha senhaPaciente;
+   		 char horaChegada[12];
+   		 char horaSaida[12];
+			
+2. Atendimento
+Apos reconhecer qual senha pertence ele redirecionará para uma das 3 “passagens do hosptital”.
+	
+
+3.Realiza atendimento
+	P = PSCICOLOGO
+	C = CIRURGIAO
+	X = RAIO-X
+	D = DENTISTA
+	
+
+
+4. Estatisticas
+Será realizada as seguintes estatisticas
+Tempo total de atendimento em cada fila
+Número de usuários atendidos em cada fila 
+
+
+
+
+----CARDIOLOGISTA
+-ROTINA
+-Ecografia transesofágica
+	É uma ecografia semelhante as não invasoras, em que o aparelho é colocado dentro do esôfago, 
+	o que, pela proximidade do coração, permite uma melhor avaliação dos detalhes de algumas válvulas cardíacas.
+	 É particularmente útil no diagnóstico de lesões em válvulas causadas pela endocardite.
+
+-Cintilografia miocárdica
+	É um teste em que a captação de um radioisótopo pelo músculo cardíaco é proporcional à sua perfusão. Pode-se fazer o exame em repouso ou sob esforço físico ou farmacológico. Zonas isquêmicas, menos bem perfundidas serão reveladas.
+	Com o passar do tempo as zonas isquêmicas, com pouco contraste podem ficar iguais às bem perfundidas mostrando ser transitória a isquemia. Diminuição de perfusão que persiste depois de 3 a 4 horas, geralmente indica a existência de zonas de infarto, recente ou antigo.
+	Algumas doenças infiltrativas do coração, bloqueios de ramo e miocardiopatias dilatadas podem apresentar distúrbios de perfusão persistentes. A cintilografia miocárdica sob esforço tem um índice de acerto de 75 até 90% e um índice de falso-positivo de até 30% (ou seja, de dar positivo quando não é). 
+
+---Pediatra
+-Rotina
+
+-Audiometria 
+	Também realizado em uma consulta pediátrica de revisão e indicado para crianças em idade pré-escolar, 
+	a audiometria busca identificar se o seu filho possui alguma variação da capacidade de percepção auditiva. 
+	Mas não apenas crianças que escutam TV em um volume alto demais precisam fazer o exame: o teste é indicado para qualquer um.
+ 	Por meio de estímulos sonoros, o pediatra observa o comportamento da criança e identifica variações da audição. 
+	O exame é rápido e pode ser feito em qualquer consulta pediátrica, particular ou na rede pública.
+
+-Raio X de idade óssea 
+	Há uma tabela padronizada, utilizada por profissionais da saúde, que regula o peso ideal das crianças proporcionalmente à altura e à idade. 
+	Baseado nesta tabela, em uma consulta pediátrica de rotina, o médico pesa e mede a criança e avalia se o seu crescimento está de acordo com a idade.
+	Se fugir do padrão, o pediatra pode pedir um Raio X de idade óssea, que identifica doenças do crescimento por meio de uma radiografia do punho e da mão da criança. 
+	Este exame é feito fora do consultório, por um técnico em radiografia, e está disponível na rede pública. Na rede privada, custa em torno de R$ 50.
+
+---Oftalmologista
+-Rotina
+
+-Gonioscopia
+	Mostra qual o aspecto do ângulo formado entre a córnea e a íris (ângulo da câmara anterior). 
+	É importante para definir qual o tipo de glaucoma: ângulo aberto ou fechado, e determinar a estratégia de tratamento.
+	Além disso, é indicado para estudo de tumores de íris, de trauma ocular ou suspeita de outras anormalidades
+-Paquimetria
+	Faz a medida da espessura corneana para planejar a cirurgia por Excimer Laser na correção da miopia, astigmatismo e hipermetropia,
+	além de avaliar a evolução da espessura corneana em doenças da córnea.
+	Também é utilizado na investigação do glaucoma, pois espessura central da córnea interfere na medida da pressão intra-ocular.
+
+---Neurologista
+- Rotina
+
+-O Eletroencefalograma
+ (EEG) é um tipo de exame neurofisiológico útil para avaliar a função do cérebro através da análise da atividade elétrica cerebral espontânea. 
+ Indicado para os mais variados transtornos neurológicos, este exame é essencial para o diagnóstico de epilepsias, demências (como Doença de Alzheimer),
+ encefalopatias diversas (de causa hepática, renal, por efeito de medicamentos, entre outras), infecções do sistema nervoso central 
+ (encefalite herpética, panencefalite esclerosante subaguda), alguns casos psiquiátricos e outros transtornos neurológicos.
+ De acordo com as necessidades de análise e diagnóstico do paciente, o exame de Eletroencefalograma pode ser realizado nas formas de sono e vigília,
+ vigília e foto estímulo, sendo que este último corresponde a um processo no qual luzes extremamente brilhantes piscam na frente do paciente em diferentes
+ velocidades com o objetivo de verificar as respostas padrões do cérebro. 
+
+-Cirugia
+
+---Dermatologista
+- Rotina
+-Exame Micológico 
+	Este exame é utilizado para a identificação dos fungos que causam micoses.
+-Exame Bacteriológico 
+	Exames bacteriológicos são utilizados para identificar diversos agentes causadores de doenças infecciosas da pele,
+ como nas doenças sexualmente transmissíveis e infecções.

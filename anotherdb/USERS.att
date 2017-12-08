@@ -1,0 +1,8 @@
+ID,INT
+LOGIN,String
+PASSWORD,String
+CREATE,boolean
+INSERT,boolean
+UPDATE,boolean
+SELECT,boolean
+DELETE,boolean

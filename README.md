@@ -1,5 +1,5 @@
 # College Projects
-This repository was created with the purpose to store my projects that was developed during my time in the college. All those projects is just for educational purposes only. I want to thanks all my college mates, my teachers and everyone who belive in me, this files mean a lot to me, even if they are simple projects and with poorly written code, I love them all!!!!!
+This repository was created with the purpose to store my projects that was developed during my time in the college. All those projects is just for educational purposes only, without concern about code quality. I want to thanks all my college mates, my teachers and everyone who belive in me, this files mean a lot to me, even if they are simple projects and with poorly written code, I love them all!!!!!
 
 # DOSnake
 A simple game developed in C in the first period of the university PUC Minas Poços de Caldas
@@ -121,4 +121,3 @@ References
 Disciplines
 - Multimedia and hypermedia systems (João Benedito dos Santos Junior)
 - Topic 2: Image Recognition (Will Ricardo dos Santos Machado)
-

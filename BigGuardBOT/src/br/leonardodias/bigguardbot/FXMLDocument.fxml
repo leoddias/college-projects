@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.leonardodias.bigguardbot.FXMLDocumentController">
+   <top>
+      <ImageView fx:id="currentFrame" fitHeight="318.0" fitWidth="420.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <image>
+            <Image url="file:/C:/Users/myuser/Documents/NetBeansProjects/BigGuardBOT/resources/botguard.png" />
+         </image>
+      </ImageView>
+   </top>
+   <bottom>
+      <Button fx:id="stop_btn" alignment="BOTTOM_RIGHT" mnemonicParsing="false" onAction="#stopCamera" prefHeight="0.0" prefWidth="44.0" text="Parar" textAlignment="CENTER" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
